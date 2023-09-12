@@ -2,29 +2,37 @@
 <html>
 
   <head>
-    <title>Exercise 1 : Ashton Yoshino | Hobbies</title>
-    
+    <title>Ashton Yoshino | Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 <body>
-  <a href="index.html">Home</a>
-  <section>
+  <div class="navbar">
+    <a href="index.html" class = "name">Ashton Yoshino</a>
+    <nav class="bar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+
+
+  <h1>Contact Me</h1>
+  <section class="contactForm">
   <form>
-    <fieldset>
-      <legend><ins>Contact Me!</ins></legend>
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="First Name...">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First Name...">
 
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last Name...">
 
-      <label for="subj">Subject</label>
-      <input type="text" id="subj" name="subject" placeholder="Subject...">
+    <label for="subj">Subject</label>
+    <input type="text" id="subj" name="subject" placeholder="Subject...">
 
-      <label for="msg">Message</label>
-      <input type="text" id="msg" name="message" placeholder="Write Something!">
+    <label for="msg">Message</label>
+    <input type="text" id="msg" name="message" placeholder="Write Something!">
 
-      <button>Submit</button>
-    </fieldset>
+    <button>Submit</button>
   </form>
   </section>
 
