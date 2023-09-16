@@ -3,77 +3,95 @@
   <head>
     <title>Ashton Yoshino | About </title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
   </head>
   <body>
-    <div class="navbar">
+    <header class = "main-header">
       <a href="index.html" class = "name">Ashton Yoshino</a>
-      <nav class="bar">
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+
+      <nav>
+        <ul class="navigation-bar">
+          <li>
+            <a href = "index.html">Home</a>
+          </li>
+          <li class = "active">
+            <a href = "about.html">About</a>
+          </li>
+          <li>
+            <a href = "contact.html">Contact</a>
+          </li>
+        </ul>
       </nav>
+    </header>
+
+    <div class = "introduction">
+      <p class = "title">About Me</p>
+      <p>Hi! It's a pleasure to introduce myself to you. My name is Ashton Yoshino and I am currently a 3rd year @ California State University Fullerton working towards a B.S in Computer Science. I find outer-space really interesting and hope that my future career plays a part in space exploration. This is my first time building a website and it is a lot of fun so far. Look down below to read more about some of my hobbies!</p>
+    </div>
+
+    <div class = "hobby-list">
+      <div class = "hobby">
+        <h2>Keyboards</h2>
+        <p>Building and modifying keyboards. Improving the way they feel, sound and look by changing different parts within the keyboard.</p>
+        <p>Current Builds</p>
+        
+        <details>
+          <summary>Mode Sonnet</summary>
+          <table>
+            <tr>
+              <th>Case</th>
+              <th>Switches</th>
+              <th>Keycap</th>
+            </tr>
+            <tr>
+              <td>Crema Sonnet</td>
+              <td>Techno Violets</td>
+              <td>Strawberry Milk</td>
+            </tr>
+          </table>
+        </details>
+        <details>
+          <summary>QK65</summary>
+          <table>
+            <tr>
+              <th>Case</th>
+              <th>Switches</th>
+              <th>Keycaps</th>
+            </tr>
+            <tr>
+              <td>Black QK65</td>
+              <td>CJ Switches</td>
+              <td>Dusk Osume</td>
+            </tr>
+          </table>
+        </details>
+
+      </div>
+      <div class = "hobby">
+        <h2>Dance</h2>
+        <p>Competed for 3 years on my High School dance team against other local teams around Southern California.</p>
+      </div>
+      <div class = "hobby">
+        <h2>Video Games</h2>
+        <p>Playing a variety of games, mostly first person shooters.</p>
+
+        <ul class= "video-games">
+          <li>Valorant</li>
+          <li>Minecraft</li>
+          <li>Rust</li>
+          <li>Osu</li>
+        </ul>
+      </div>
     </div>
 
 
-    <h1>About Me</h1>
-    <p>Hi! My name is Ashton and I am half Filipino and Japanese. My favorite color is purple. Check out some of my hobbies below! &#128516;</p>
 
-    <h2> Hobbies </h2>
+    <br>
 
-    <details>
-      <summary><b>Keyboards</b></summary>
-      <p>Building and modifying keyboards.</p>
-      <img src="https://osumekeys.com/cdn/shop/products/duskpurple.jpg?v=1640221719&width=250" alt="QK65">
-
-      <fieldset>
-        <table>
-          <tr>
-            <th>Case</th>
-            <th>Switches</th>
-            <th>Keycaps</th>
-          </tr>
-          <tr>
-            <td>QK65</td>
-            <td>CJ Switches</td>
-            <td>Osume Dusk</td>
-          </tr>
-          <tr>
-            <td>Mode Sonnet</td>
-            <td>Techno Violets</td>
-            <td>Osume Strawberry</td>
-          </tr>
-        </table>
-      </fieldset>
-    </details>
-
-    <details>
-      <summary><b>Cooking</b></summary>
-      <p>Following recipes online and recreating them with friends.</p>
-    </details>
-
-    <details>
-      <summary><b>Dancing</b></summary>
-      <p>Participated on a dance team throughout highschool where we had multiple performances and competitions</p>
-      <small>Mostly Hiphop</small>
-    </details>
-
-    <details>
-      <summary><b>Video Games</b></summary>
-      <p>Play a variety of videos, <mark>mostly FPS</mark>. Small snippet of what I play below</p>
-
-      <ul>
-        <li>Valorant</li>
-        <li>CSGO</li>
-        <li>Minecraft</li>
-      </ul>
-    </details>
-
-    <p>Current Favorite Song</p>
-    <iframe width="250" height="200"
-    src="https://www.youtube.com/embed/6Q5xqNkCk7w">
-    </iframe>
-
+    <p class = "title">Check out my favorite song at the moment!</p>
+    <p>bad by wave to earth</p>
+    <iframe class = "favorite-song" src="https://www.youtube.com/embed/6Q5xqNkCk7w"> </iframe>
 
   </body>
 </html>

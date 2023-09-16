@@ -1,58 +1,223 @@
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #181818;
-  text-align: center;
-  color: white;
-  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #282828;
-  min-height: 4rem;
-  background-position: center;
-  background-size: cover;
-  align-items: center;
-  display: flex;
+
+/* colors 
+  dark purple : #3a3153
+  purple : #5f43b2
+  off white : #fefdfd
+  grey : #b1aebb
+
+*/
+
+.main-header{
   justify-content: space-between;
-}
-
-.navbar nav {
-  margin-right: 3rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #3a3153;
+  width: 100%;
+  height: 80px;
 }
 
 .name {
-  font-size: 3rem;
+  margin: 2rem;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
   font-weight: bold;
+  text-decoration: none;
+  color: #e6ddde;
 }
 
-.bar a:hover {
+.navigation-bar{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  margin-inline-end: 0.75em;
+  color: #e6ddde;
+}
+
+.navigation-bar a:hover {
   color: #b3b3b3;
 }
 
-.bar a.active {
+.active a {
   color: #b3b3b3;
 }
 
-/* index */
-.torrance-beach {
-  height:300px;
+body {
+  background-color: #b1aebb;
+  color: #010101;
 }
 
-.quote {
-  font-size: 50px;
-  font-weight: bolder;
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+p {
+  margin: 0rem 1rem;
+  margin-right: 0;
+}
+
+
+/* index.html */
+.index-image-container {
+  background-image: url("/photos/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+
+.index-image-container blockquote {
+  color: #fefdfd;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  font-size: 1.25rem;
+}
+
+.index-image-container p, cite {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.quote .cite {
- font-style: italic; 
+.index-image-container p {
+  text-shadow: 2px 2px #5f43b2;
+}
+
+
+footer {
+  float: right;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+/* about.html */
+.introduction {
+  margin: 1rem;
+  outline-style: solid;
+  padding: 1rem;
+  align-items: center;
+  outline-width: 1px;
+  outline-color:  #3a3153;
+  background-color: #fefdfd;
+  background-image: linear-gradient(to bottom right, #fefdfd, #5f43b2);
+}
+.hobby-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hobby {
+  border-radius: 25px;
+  flex: 1;
+  margin: 1rem;
+  background-color: #fefdfd;
+  padding: 12px 15px;
+  font-size: 0.8rem;
+  opacity: 75%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 3% 5%;
+  width: 90%;
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #010101;
+  padding: 12px 15px;
+}
+
+.video-games {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 0.5rem;
+}
+
+.favorite-song { 
+  margin-left: 1rem;
+  height: 250px;
+  width: 30%;
+  align-self: center;
+}
+
+/* contact.html */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fefdfd;
+  border: 1px solid #b1aebb;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 75px;
+  height: 35px;
+  border: none;
+  background-color: #5f43b2;
+  border-radius: 5px;
+  color: white;
+}
+
+button:hover {
+  background-color: #b3b3b3;
+}
+
+#msg {
+  height: 100px;
+}
+
+
+/* Repsonsive */
+@media screen and (max-width: 1080px) {
+  .hobby-list {
+    flex-direction: column;
+    height:800px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 1.5rem;
+  }
+  .favorite-song {
+    margin-right: 1rem;
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
 }
